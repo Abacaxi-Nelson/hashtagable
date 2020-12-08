@@ -21,6 +21,7 @@ bool hasHashTags(String value) {
 List<String> extractHashTags(String value) {
   final decoratedTextColor = Colors.blue;
   final decorator = Decorator(
+    decorateAtSign: true, 
       textStyle: TextStyle(),
       decoratedStyle: TextStyle(color: decoratedTextColor));
   final decorations = decorator.getDecorations(value);
